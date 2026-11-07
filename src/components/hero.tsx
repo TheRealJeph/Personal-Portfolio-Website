@@ -91,7 +91,7 @@ export function Hero() {
   data-photo
   onMouseMove={handleMove}
   onMouseLeave={handleLeave}
-  className="relative z-10 h-[75vh] w-[min(90vw,520px)] will-change-transform"
+  className="relative z-10 h-[36vh] max-h-[340px] w-[min(60vw,230px)] sm:h-[44vh] sm:w-[min(40vw,270px)] lg:h-[38vh] lg:max-h-[380px] lg:w-[min(22vw,210px)] will-change-transform"
 >
   <Image
     src="/images/profile.png"

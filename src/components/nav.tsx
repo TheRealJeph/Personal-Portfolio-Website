@@ -33,7 +33,7 @@ export function Nav() {
   return (
     <header className="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
       <nav
-        className={`flex items-center justify-between gap-4 rounded-full border border-white/10 bg-black/40 px-4 py-2 backdrop-blur-xl transition-all duration-500 ${
+        className={`flex w-full min-w-0 items-center justify-between gap-2 rounded-full border border-white/10 bg-black/40 px-3 py-2 backdrop-blur-xl transition-all duration-500 sm:gap-4 sm:px-4 ${
           scrolled ? "max-w-4xl scale-[0.98]" : "max-w-xl"
         }`}
       >

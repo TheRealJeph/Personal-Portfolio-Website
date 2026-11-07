@@ -163,10 +163,9 @@ export function ProjectsGallery() {
       </div>
 
       <div
-        ref={trackRef}
-        className="relative"
-        style={{ minWidth: "max-content" }}
-      >
+  ref={trackRef}
+  className="relative w-full min-w-0"
+>
         {isMobile ? (
           // Mobile: vertical stack
           <div className="flex flex-col items-center gap-8 px-6 pb-16">
@@ -179,10 +178,9 @@ export function ProjectsGallery() {
         ) : (
           // Desktop: horizontal scroll
           <div
-            ref={trackRef}
-            className="flex flex-1 flex-nowrap items-center gap-6 overflow-hidden will-change-transform pl-[6vw]"
-            style={{ height: "calc(100vh - 14rem)", minWidth: "max-content" }}
-          >
+  className="flex flex-1 flex-nowrap items-center gap-6 overflow-hidden will-change-transform pl-[6vw]"
+  style={{ height: "calc(100vh - 14rem)", minWidth: "max-content" }}
+>
             {projects.map((p) => (
               <ProjectCard key={p.slug} project={p} />
             ))}
