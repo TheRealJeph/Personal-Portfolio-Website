@@ -38,7 +38,7 @@ export function Nav() {
         }`}
       >
         <span className="px-2 font-display text-lg font-bold tracking-tight text-fg">
-          YD<span className="text-accent">.</span>
+          GMJ<span className="text-accent">.</span>
         </span>
 
         <ul className="hidden items-center gap-1 md:flex">
@@ -55,7 +55,7 @@ export function Nav() {
         </ul>
 
         <a
-          href="/Muhammad_Ibrahim_resume.pdf"
+          href="/Joseph Gitaramo Mihigo - CV.pdf"
           download
           onClick={() => setOpen(false)}
           className="rounded-full bg-fg px-4 py-1.5 text-sm font-medium text-bg transition-colors hover:bg-accent"

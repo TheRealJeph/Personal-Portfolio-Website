@@ -4,8 +4,8 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "gsap";
 
-const NAME = "Muhammad Ibrahim";
-const ROLE = "Providing Real-World AI Solutions";
+const NAME = "GITARAMO Mihigo Joseph";
+const ROLE = "Data Analyst and Python Full-Stack Developer building real-world AI products";
 
 export function Hero() {
   const rootRef = useRef<HTMLElement>(null);
@@ -84,23 +84,23 @@ export function Hero() {
         className="pointer-events-none absolute inset-x-0 z-0 select-none whitespace-nowrap text-center font-display font-bold leading-none text-white/[0.09]"
         style={{ fontSize: "clamp(3.5rem, 13vw, 13rem)" }}
       >
-        DEVELOPER
+        PYTHON
       </h1>
 
       <div
-        data-photo
-        onMouseMove={handleMove}
-        onMouseLeave={handleLeave}
-        className="relative z-10 h-[58vh] w-[min(78vw,380px)] will-change-transform"
-      >
-        <Image
-          src="/images/profile.png"
-          alt="Portrait"
-          fill
-          priority
-          sizes="(max-width: 768px) 78vw, 380px"
-          className="object-contain mix-blend-screen grayscale contrast-[1.05]"
-        />
+  data-photo
+  onMouseMove={handleMove}
+  onMouseLeave={handleLeave}
+  className="relative z-10 h-[75vh] w-[min(90vw,520px)] will-change-transform"
+>
+  <Image
+    src="/images/profile.png"
+    alt="Portrait"
+    fill
+    priority
+    sizes="(max-width: 768px) 90vw, 520px"
+    className="object-contain mix-blend-screen grayscale contrast-[1.05]"
+  />
         <div
           ref={maskRef}
           aria-hidden
@@ -142,33 +142,3 @@ export function Hero() {
   );
 }
 
-function handleMove(e: React.MouseEvent<HTMLDivElement>) {
-  const wrap = e.currentTarget;
-  const rect = wrap.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  const r = 46;
-
-  const mask = maskRef.current;
-  if (mask) {
-    const grad = `radial-gradient(circle ${r}px at ${x}px ${y}px, #000 30%, #000 55%, transparent 72%)`;
-    mask.style.maskImage = grad;
-    (
-      mask.style as CSSStyleDeclaration & { webkitMaskImage: string }
-    ).webkitMaskImage = grad;
-    mask.style.opacity = "1";
-  }
-  const ring = ringRef.current;
-  if (ring) {
-    ring.style.transform = `translate(${x}px, ${y}px) translate(-50%, -50%)`;
-    ring.style.opacity = "1";
-  }
-}
-
-function handleLeave() {
-  if (maskRef.current) maskRef.current.style.opacity = "0";
-  if (ringRef.current) ringRef.current.style.opacity = "0";
-}
-
-const maskRef = { current: null as HTMLDivElement | null };
-const ringRef = { current: null as HTMLDivElement | null };

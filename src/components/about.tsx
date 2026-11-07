@@ -23,15 +23,17 @@ export function About() {
         <p className="mb-4 text-xs tracking-[0.3em] text-black/50 uppercase">
           About
         </p>
-        <TextOutline className="font-display font-bold tracking-tight text-[clamp(2.5rem,8vw,5rem)] leading-[1.05]">
-          Dev who ships
+        <TextOutline className="font-display font-bold tracking-tight text-[clamp(1.3rem,3.5vw,2.5rem)] leading-[1.1]">
+          Python full-stack,
           <br />
-          with restraint.
+          shipped end to end.
         </TextOutline>
-        <p className="mt-6 max-w-lg text-base leading-8 text-black/70 md:text-lg md:leading-9">
-          A short, scannable introduction goes here — what you do, what you
-          care about, and the kind of work you want to do next. Keep it
-          minimal. Let the whitespace do the talking.
+        <p className="mt-4 max-w-lg text-base leading-6 text-black/70 md:text-lg md:leading-7">
+          I&apos;m GITARAMO Mihigo Joseph, a final-year Business Information Technology student at the University of Rwanda, passionate about Artificial Intelligence, Data Science, and Software Development.
+
+I enjoy transforming data into meaningful insights, building backend systems, and developing technology-driven solutions to real-world problems. My technical interests include Python, Django, React, SQL, Data Analytics, and Machine Learning.
+
+My goal is to become an AI Engineer, building innovative and impactful solutions that contribute to technological advancement and create meaningful opportunities, particularly across Africa.
         </p>
       </div>
 

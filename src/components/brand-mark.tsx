@@ -1,4 +1,9 @@
 import {
+  siFastapi,
+  siMongodb,
+  siRedis,
+  siDocker,
+  siGit,
   siReact,
   siTypescript,
   siNextdotjs,
@@ -11,11 +16,27 @@ import {
   siFigma,
   siHtml5,
   siCss,
+  siPandas,
+  siNumpy,
+  siMysql,
+  siPlotly,
+  siJupyter,
+  siDjango,
   type SimpleIcon,
 } from "simple-icons";
+import {
+  ChartColumnIncreasing,
+  FileSpreadsheet,
+  type LucideIcon,
+} from "lucide-react";
 import { skills, type Skill } from "@/lib/skills";
 
-const registry: Record<string, SimpleIcon> = {
+const registry: Record<string, SimpleIcon | LucideIcon> = {
+  siFastapi,
+  siMongodb,
+  siRedis,
+  siDocker,
+  siGit,
   siReact,
   siTypescript,
   siNextdotjs,
@@ -28,6 +49,14 @@ const registry: Record<string, SimpleIcon> = {
   siFigma,
   siHtml5,
   siCss,
+  siPandas,
+  siNumpy,
+  siMysql,
+  siPlotly,
+  siJupyter,
+  siDjango,
+  ChartColumnIncreasing,
+  FileSpreadsheet,
 };
 
 export function BrandMark({ name, size = 24 }: { name: Skill["name"]; size?: number }) {
@@ -35,6 +64,10 @@ export function BrandMark({ name, size = 24 }: { name: Skill["name"]; size?: num
   if (!skill) return null;
   const icon = registry[skill.icon];
   if (!icon) return null;
+  if (!("path" in icon)) {
+    const Icon = icon;
+    return <Icon role="img" aria-label={skill.name} width={size} height={size} />;
+  }
   return (
     <svg
       role="img"

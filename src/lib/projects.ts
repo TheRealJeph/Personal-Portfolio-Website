@@ -17,134 +17,62 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "pocket-campus",
-    title: "PocketCampus",
-    tagline: "Student Finance · Next.js / FastAPI",
-    year: "2026",
-    role: "Full-stack Developer",
-    summary:
-      "A warm, installable expense tracker for students, with budgets, voice entry, campus places, and a ledger built around Pakistani Rupees.",
-    problem:
-      "Students need a simple way to understand daily spending without the friction and coldness of generic finance dashboards.",
-    solution:
-      "Built a mobile-first PWA with monthly budgets, voice-assisted expense capture, activity history, location-aware campus discovery, and secure Google authentication.",
-    stack: ["Next.js", "TypeScript", "FastAPI", "MongoDB", "PWA", "OpenStreetMap"],
-    live: "https://pocket-campus-bice.vercel.app/dashboard/",
-    github: "https://github.com/RMIN06/PocketCampus",
-    image: "/projects/pocket-campus.png",
-    external: true,
-    accent: "#e27d60",
-  },
+  slug: "agri-sight-rwanda",
+  title: "Agri-Sight Rwanda",
+  tagline: "Agricultural Data Analytics · Django REST Framework / React",
+  year: "2026",
+  role: "Full-Stack Developer & Data Analyst",
+  summary:
+    "A web-based agricultural data analytics and decision-support platform that transforms Rwanda's agricultural survey data into meaningful insights about crop production, district-level performance, seasonal patterns, and data quality.",
+  problem:
+    "Agricultural planners, researchers, and policymakers need accessible and reliable information to understand agricultural productivity. However, analyzing agricultural survey data across districts, crops, seasons, and years can be time-consuming and difficult.",
+  solution:
+    "Developed an interactive analytics platform using NISR Seasonal Agricultural Survey data (2023–2025). It enables users to explore agricultural performance through interactive dashboards, crop analysis, district comparisons, historical trends, and data quality insights to support evidence-based agricultural planning.",
+  stack: [
+    "React",
+    "TypeScript",
+    "Python",
+    "Django REST Framework",
+    "PostgreSQL",
+    "Axios",
+    "Data Analytics",
+    "NISR Dataset"
+  ],
+  live: "https://agri-sight-rwanda.pages.dev",
+  github: "https://github.com/TheRealJeph/agri-sight-rwanda.git",
+  image: "/projects/agri-sight-rwanda.png",
+  external: true,
+  accent: "#16a34a",
+},
   {
-    slug: "unilens",
-    title: "UniLens",
-    tagline: "University Discovery · Next.js",
-    year: "2026",
-    role: "Full-stack Developer",
-    summary:
-      "A student experience platform helping people compare Pakistani universities through verified, first-hand outcomes instead of marketing claims.",
-    problem:
-      "Choosing a university is difficult when rankings do not reflect the lived experience, field-specific outcomes, or recent graduate perspectives.",
-    solution:
-      "Created a contribution and discovery loop for pre-university students, undergraduates, and graduates, supported by weighted experience signals and community validation.",
-    stack: ["Next.js", "TypeScript", "MongoDB", "NextAuth", "React Three Fiber", "Framer Motion"],
-    live: "https://unilens-ten.vercel.app",
-    github: "https://github.com/RMIN06/UniLens",
-    image: "/projects/unilens.png",
-    external: true,
-    accent: "#7295d7",
-  },
-  {
-    slug: "barq-ai-assistant",
-    title: "Barq AI Assistant",
-    tagline: "Desktop AI Assistant · Python",
-    year: "2026",
-    role: "Full-stack Developer",
-    summary:
-      "A fully authoritative desktop AI assistant inspired by JARVIS, featuring voice interaction, system control, and intelligent task automation.",
-    problem:
-      "Existing desktop assistants lack deep system integration and contextual awareness, limiting their utility for power users and developers.",
-    solution:
-      "Built a modular Python-based desktop assistant with voice recognition, system-level command execution, plugin architecture, and contextual memory for autonomous task execution.",
-    stack: ["Python", "PyQt6", "SpeechRecognition", "pyttsx3", "OpenAI API", "psutil", "keyboard", "mouse"],
-    live: "",
-    github: "https://github.com/RMIN06/barq-ai-assistant",
-    accent: "#7c9bff",
-  },
-  {
-    slug: "ai-clipping-tool-fast-whisper",
-    title: "AI Clipping Tool",
-    tagline: "YouTube Automation · Fast Whisper",
-    year: "2026",
-    role: "Full-stack Developer",
-    summary:
-      "An AI-powered master clipper for YouTube automation and shorts creation, leveraging fast-whisper for real-time transcription and intelligent clip detection.",
-    problem:
-      "Content creators spend hours manually clipping long-form videos into shorts, with existing tools lacking accuracy in highlight detection and transcription speed.",
-    solution:
-      "Built a Python-based clipping pipeline using faster-whisper for real-time transcription, LLM-based highlight detection, and automated vertical video formatting for YouTube Shorts/TikTok.",
-    stack: ["Python", "faster-whisper", "OpenAI API", "FFmpeg", "MoviePy", "yt-dlp", "LangChain"],
-    live: "",
-    github: "https://github.com/RMIN06/Ai-Clipping-Tool-fast-whisper",
-    accent: "#ff6b6b",
-  },
-  {
-    slug: "sleek-solar-bot",
-    title: "Sleek Solar Bot",
-    tagline: "Solar Monitoring Bot · Python",
-    year: "2026",
-    role: "Backend Developer",
-    summary:
-      "A solar monitoring and automation bot for tracking solar panel performance, energy generation, and system health metrics in real-time.",
-    problem:
-      "Solar system owners lack accessible real-time monitoring tools with alerting capabilities for performance degradation and system issues.",
-    solution:
-      "Developed a Python-based monitoring bot that integrates with solar inverter APIs, provides real-time dashboard, automated alerts for anomalies, and historical performance analytics.",
-    stack: ["Python", "asyncio", "aiohttp", "InfluxDB", "Grafana", "Telegram Bot API", "Schedule"],
-    live: "",
-    github: "https://github.com/RMIN06/sleek_solar_bot",
-    accent: "#f4a261",
-  },
-  {
-    slug: "rag-document",
-    title: "RAG Document Analyzer",
-    tagline: "Enterprise RAG · TypeScript",
-    year: "2026",
-    role: "Full-stack Developer",
-    summary:
-      "An enterprise-grade RAG (Retrieval-Augmented Generation) document analyzer for secure, private document querying and knowledge extraction.",
-    problem:
-      "Enterprises need secure document analysis without sending sensitive data to external APIs, while maintaining high retrieval accuracy and response quality.",
-    solution:
-      "Built a TypeScript-based RAG pipeline with local embedding models, vector database integration, hybrid search (semantic + keyword), and on-premise LLM support for complete data privacy.",
-    stack: ["TypeScript", "Node.js", "LangChain", "ChromaDB", "Ollama", "HuggingFace Transformers", "Express", "PostgreSQL"],
-    live: "",
-    github: "https://github.com/RMIN06/RAG-Document",
-    accent: "#2ecc71",
-  },
-  {
-    slug: "automated-transit-route-monitoring",
-    title: "Transit Route Monitor",
-    tagline: "AI Transit Monitoring · Python",
-    year: "2026",
-    role: "AI/ML Engineer",
-    summary:
-      "AI-powered automated transit and route monitoring system with real-time tracking, route optimization, and predictive analytics for public transportation.",
-    problem:
-      "Transit agencies struggle with real-time route monitoring, delay prediction, and dynamic route optimization due to fragmented data sources and lack of ML infrastructure.",
-    solution:
-      "Built an end-to-end ML pipeline ingesting GTFS-realtime feeds, GPS data, and historical patterns to provide real-time ETAs, delay predictions, and automated route optimization recommendations.",
-    stack: ["Python", "TensorFlow/Keras", "GTFS-realtime", "Pandas", "GeoPandas", "Kafka", "Redis", "FastAPI", "PostGIS"],
-    live: "",
-    github: "https://github.com/RMIN06/Automated-Transit-and-Route-Monitoring-Agent",
-    accent: "#3498db",
-  },
+  slug: "unidine",
+  title: "UniDine",
+  tagline: "University Dining · Web Application",
+  year: "2025",
+  role: "Full-Stack Developer",
+  summary:
+    "A university-focused web application designed to improve the dining experience by making food-related services and information more accessible to students.",
+  problem:
+    "University students need convenient ways to access dining information and services during their academic day. Disconnected or inconvenient dining experiences can make it harder to find suitable food options.",
+  solution:
+    "Developed UniDine, a web application focused on university dining. The platform aims to make dining-related information and services easier for students to access through a dedicated digital experience.",
+  stack: [
+    "Web Development",
+    "Frontend Development",
+    "Backend Development"
+  ],
+  live: "",
+  github: "https://github.com/TheRealJeph/UniDine_WebApp",
+  image: "/projects/unidine.png",
+  external: true,
+  accent: "#e27d60",
+},
   {
     slug: "gmail-auto-categorizer",
     title: "Gmail Auto Categorizer",
     tagline: "Email AI Agent · Python",
     year: "2026",
-    role: "AI/ML Engineer",
+    role: "Python Developer (AI/ML)",
     summary:
       "An AI agent that automatically categorizes emails into SPAM, FYI, Urgent, and custom categories using LLMs and rule-based classification.",
     problem:
@@ -153,60 +81,70 @@ export const projects: Project[] = [
       "Developed a Gmail-integrated AI agent using LLMs for semantic email understanding, few-shot classification, user feedback loops for continuous improvement, and privacy-preserving local processing option.",
     stack: ["Python", "Gmail API", "OpenAI API", "LangChain", "ChromaDB", "OAuth2", "FastAPI", "Docker"],
     live: "",
-    github: "https://github.com/RMIN06/Gmail-Auto-Catagorizer",
+    github: "",
     accent: "#e74c3c",
   },
   {
-    slug: "ai-notes-summarizer",
-    title: "AI Notes Summarizer",
-    tagline: "PDF Notes Summarizer · Python",
+    slug: "automated-transit-route-monitoring",
+    title: "Transit Route Monitor",
+    tagline: "AI Transit Monitoring · Python",
     year: "2026",
-    role: "Full-stack Developer",
+    role: "Python Developer (AI/ML)",
     summary:
-      "A PDF notes summarizer that extracts, structures, and summarizes academic and professional notes using LLMs with citation tracking.",
+      "AI-powered automated transit and route monitoring system with real-time tracking, route optimization, and predictive analytics for public transportation.",
     problem:
-      "Students and professionals accumulate hundreds of pages of notes but lack tools to efficiently summarize, search, and cross-reference key concepts.",
+      "Transit agencies struggle with real-time route monitoring, delay prediction, and dynamic route optimization due to fragmented data sources and lack of ML infrastructure.",
     solution:
-      "Built a PDF processing pipeline with OCR fallback, semantic chunking, LLM-based summarization with citations, concept extraction, and interactive Q&A over the knowledge base.",
-    stack: ["Python", "PyMuPDF", "pdfplumber", "OpenAI API", "LangChain", "FAISS", "Streamlit", "Tesseract OCR"],
+      "Built an end-to-end ML pipeline ingesting GTFS-realtime feeds, GPS data, and historical patterns to provide real-time ETAs, delay predictions, and automated route optimization recommendations.",
+    stack: ["Python", "TensorFlow/Keras", "GTFS-realtime", "Pandas", "GeoPandas", "Kafka", "Redis", "FastAPI", "PostGIS"],
     live: "",
-    github: "https://github.com/RMIN06/Ai-Notes-Summarizer",
-    accent: "#9b59b6",
+    github: "",
+    accent: "#3498db",
   },
   {
-    slug: "oop-project-rpg-game",
-    title: "OOP RPG Game",
-    tagline: "SFML RPG Game · C++",
-    year: "2025",
-    role: "Game Developer",
+  slug: "customer-behaviour-analysis",
+  title: "Customer Behaviour Analysis",
+  tagline: "Data Analytics & Business Intelligence · SQL · Python · Power BI",
+  year: "2026",
+  role: "Data Analyst",
+  summary:
+    "An end-to-end customer behaviour analysis project that transforms retail shopping data into actionable business insights through Python-based data processing, SQL analysis, and interactive Power BI dashboards.",
+  problem:
+    "Businesses need to understand customer purchasing patterns, spending behaviour, product preferences, and customer segments to make informed decisions and improve their sales and marketing strategies.",
+  solution:
+    "Performed data cleaning, exploratory data analysis, and feature engineering using Python. Used SQL to investigate business questions, identify customer segments, and analyze purchasing patterns. Developed interactive Power BI dashboards to visualize key metrics, customer trends, and actionable business insights.",
+  stack: [
+    "Python",
+    "Pandas",
+    "NumPy",
+    "SQL",
+    "Power BI",
+    "DAX",
+    "Data Visualization",
+    "Jupyter Notebook"
+  ],
+  live: "",
+  github: "https://github.com/TheRealJeph/Customer_Behaviour_Analysis-SQL-PYTHON-POWER-BI-",
+  accent: "#3498db",
+},
+{
+    slug: "rag-document",
+    title: "RAG Document Analyzer",
+    tagline: "Enterprise RAG · TypeScript",
+    year: "2026",
+    role: "Full-Stack Developer",
     summary:
-      "A 2D RPG game built with SFML as a 2nd semester OOP project, featuring entity-component architecture, state management, and real-time combat.",
+      "An enterprise-grade RAG (Retrieval-Augmented Generation) document analyzer for secure, private document querying and knowledge extraction.",
     problem:
-      "Learning game architecture patterns while building a complete, playable RPG with inventory, quests, combat, and progression systems from scratch.",
+      "Enterprises need secure document analysis without sending sensitive data to external APIs, while maintaining high retrieval accuracy and response quality.",
     solution:
-      "Implemented a C++ RPG with Entity-Component-System architecture, finite state machines for AI, resource management, save/load system, and modular level design using SFML for graphics and audio.",
-    stack: ["C++17", "SFML 2.6", "CMake", "Entity-Component-System", "State Machines", "JSON for save data"],
+      "Built a TypeScript-based RAG pipeline with local embedding models, vector database integration, hybrid search (semantic + keyword), and on-premise LLM support for complete data privacy.",
+    stack: ["TypeScript", "Node.js", "LangChain", "ChromaDB", "Ollama", "HuggingFace Transformers", "Express", "PostgreSQL"],
     live: "",
-    github: "https://github.com/RMIN06/OOP-Project-RPG-Game",
-    accent: "#e67e22",
+    github: "",
+    accent: "#2ecc71",
   },
-  {
-    slug: "ai-background-remover",
-    title: "AI Background Remover",
-    tagline: "Offline Background Removal · Python",
-    year: "2025",
-    role: "ML Engineer",
-    summary:
-      "An offline AI-powered background remover using segmentation models, providing privacy-preserving background removal without cloud dependencies.",
-    problem:
-      "Existing background removal tools require uploading images to cloud services, raising privacy concerns and requiring internet connectivity.",
-    solution:
-      "Implemented an offline background removal tool using ONNX Runtime with U2-Net segmentation model, batch processing CLI, and simple GUI, achieving near-cloud quality fully offline.",
-    stack: ["Python", "ONNX Runtime", "U2-Net", "OpenCV", "NumPy", "PyTorch (export)", "Tkinter", "Pillow"],
-    live: "",
-    github: "https://github.com/RMIN06/ai-background-remover",
-    accent: "#1abc9c",
-  },
+ 
 ];
 
 export function getProject(slug: string): Project | undefined {

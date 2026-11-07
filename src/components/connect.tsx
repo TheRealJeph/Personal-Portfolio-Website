@@ -4,14 +4,14 @@ import { socials, SocialIcon } from "@/components/social-icons";
 import { scrollToSection } from "@/lib/scroll";
 
 const SOCIAL_LINKS: Record<string, string> = {
-  whatsapp: "https://wa.me/923000000000",
-  linkedin: "https://www.linkedin.com/in/ibrahimatfast",
-  github: "https://github.com/ibrahimatfast",
-  instagram: "https://www.instagram.com/ibrahimatfast",
-  facebook: "https://www.facebook.com/muhammad.ibrahim.783390",
+  whatsapp: "",
+  linkedin: "https://www.linkedin.com/in/gitaramo-mihigo-joseph-373b20368/",
+  github: "https://github.com/TheRealJeph",
+  instagram: "",
+  facebook: "",
 };
 
-const EMAIL = "ibrahimsocial06@gmail.com";
+const EMAIL = "jephcham@gmail.com";
 
 export function Connect() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {

@@ -16,9 +16,9 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Developer Portfolio",
+  title: "GITARAMO MIHIGO Joseph | Python Full-Stack Developer",
   description:
-    "A developers portfolio — a single-page, scroll-driven experience.",
+    "Portfolio of GITARAMO MIHIGO Joseph, a Data Analyst and Python full-stack developer building Django REST Framework backends, React frontends, and AI-powered products.",
 };
 
 export default function RootLayout({
